@@ -1,6 +1,6 @@
 import ActionTypes from './types'
-import * as API from 'core/api'
-import { errorHandler } from 'core/helpers'
+import * as API from '../../core/api'
+import { errorHandler } from '../../core/helpers'
 
 export const apiAttempt = () => ({ type: ActionTypes.API_ATTEMPT })
 export const apiFailure = () => ({ type: ActionTypes.API_FAILURE })

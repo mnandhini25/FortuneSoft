@@ -4,8 +4,9 @@ import ReduxToastr from 'react-redux-toastr'
 
 import NotFoundPage from './containers/NotFoundPage'
 import BadPermPage from './containers/BadPermPage'
-import MoviesPage from 'movies/containers/MoviesPage'
-import MovieDetail from 'movies/containers/MovieDetail'
+import MoviesPage from '../movies/containers/MoviesPage'
+import MovieDetail from '../movies/containers/MovieDetail'
+
 
 const Routes = () => (
   <>

@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import InputBase from '@material-ui/core/InputBase'
 import SearchIcon from '@material-ui/icons/Search'
 import { throttle } from 'throttle-debounce'
-import * as MoviesActions from 'movies/store/actions'
+import * as MoviesActions from '../../../movies/store/actions'
 
 const useStyles = makeStyles((theme) => ({
   grow: {

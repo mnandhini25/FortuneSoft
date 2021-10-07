@@ -6,7 +6,7 @@ import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 import coreReducer from './store/reducers'
-import moviesReducer from 'movies/store/reducers'
+import moviesReducer from '../movies/store/reducers'
 
 const rootPersistConfig = {
   key: 'root',

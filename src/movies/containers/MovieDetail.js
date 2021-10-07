@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { makeStyles, Grid, Button, CircularProgress } from '@material-ui/core'
 import Moment from 'moment'
-import { Header } from 'core/components'
+import { Header } from '../../core/components'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,7 +50,7 @@ const MovieDetail = (props) => {
 
   return (
     <div>
-      <Header />
+      <Header/>
       {
         loading && <div className="flex justify-center items-center" style={{height: '80vh'}}>
           <CircularProgress />

@@ -2,7 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { makeStyles, Card, CardActions, CardContent, CardMedia, Button, Typography, Grid, CircularProgress, Divider } from '@material-ui/core'
-import { Header } from 'core/components'
+import { Header } from '../../core/components';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -80,7 +81,7 @@ const MoviesPage = ({ data, loading }) => {
 
   return (
     <div>
-      <Header />
+      <Header/>
       <div className='flex flex-col justify-center p-40 pt-60'>
         {
           loading && <div className="flex justify-center items-center" style={{height: '80vh'}}>

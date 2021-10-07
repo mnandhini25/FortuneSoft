@@ -9,19 +9,24 @@ import { MuiThemeProvider } from '@material-ui/core'
 
 import reduxStore from './store'
 import * as serviceWorker from './serviceWorker'
-import 'styles/index.scss'
+import './styles/index.scss'
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
+import Routes from './core/Routes'
+import theme from './core/theme'
 
 const { store, persistor, history } = reduxStore
 const App = (
   <Provider store={store}>
     <ConnectedRouter history={history}>
+      <MuiThemeProvider theme={theme}>
         <StylesProvider injectFirst>
           <CssBaseline />
           <PersistGate loading={null} persistor={persistor}>
-          
+            <Routes/>
+            
           </PersistGate>
         </StylesProvider>
+      </MuiThemeProvider>
     </ConnectedRouter>
   </Provider>
 )
